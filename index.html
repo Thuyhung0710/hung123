@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Lê Thị Hưng</title>
+	<link rel="stylesheet" href="style.css" class="">
+	<link href='https://css.gg/search.css' rel='stylesheet'>
+    <link href='https://css.gg/shopping-bag.css' rel='stylesheet'>
+
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+  </div>
+
+<bodyonload="myF()">
+ <script type="text/javascript">
+function hide_float_left() {
+   var content = document.getElementById('float_content_left');
+   var hide = document.getElementById('hide_float_left');
+   if (content.style.display == "none")
+   {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_left()"> Tắt quảng cáo [X]</a>'; }
+       else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_left()">Tuyển tập những cuốn sách hay</a>';
+   }
+   }
+ function myF(){
+     onl.style.display = "block";
+     
+   }
+   function un(){
+       onl.style.display = "none";
+   }
+</script>
+ 
+<style>
+.float-ck { position: fixed; bottom: 30px; z-index: 9000}
+#float_content_left {border: 3px solid #01AEF0;}
+#hide_float_left {text-align:left; font-size: 11px;}
+#hide_float_left a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+</style>
+
+
+   <div class="float-ck" style="left: 0px">
+<div id="hide_float_left">
+<a href="javascript:hide_float_left()">Tắt quảng cáo[X]</a></div>
+<div id="float_content_left">
+<!-- Start quang cao-->
+<img src="img/quangcao.jpg" width="300" height="150">
+<!-- End quang cao -->
+</div>
+</div>
+<!-- QUẢNG CÁO GIỮA -->
+   <div id="onl" style="position: fixed; bottom: 120px; top: 80px; left: 300px; z-index: 100; display: block;">
+     <div style="background-color:black; width:700px; height:200px;">
+           <a href="javascript:un()" style="color:#F00;"> Tắt quảng cáo [X]</a>
+           <img src="img/quang cao 2.jpg" width="500" height="150">
+       </div>
+   </div>
+<!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+	<div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="img/logo.jpeg" alt="logo"></a>
+                <ul id="main-menu">
+                    <li><a href="">Trang chủ</a></li>
+                    <li class="has-child"><a href="">Thể loại</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Học Tập</a></li>
+                            <li><a href="">Tâm lý</a></li>
+                            <li><a href="">Truyện Tranh</a></li>
+                            <li><a href="">Trinh thám</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Mua Sách</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+   </div>
+       
+        <div class="main">
+          <div class="timkiem">
+            <div class="others">
+          <ul>
+          <li><input placeholder="Tìm Kiếm" type="text"><a href=""><i class="gg-search"></i></a></li>
+          <a href=""><i class="gg-shopping-bag"></i></a>
+          </ul>
+      </div>
+      </div>
+</div>
+      
+      <div id="slideshow">
+          <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/background-sach-tri-thuc.jpg" style="width: 1000px; height: 450px;" >
+            <div class="text">Caption Text </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/Background-book-sach-da-dang-doc-dao-chat-luong-cao.jpg" style="width: 1000px; height: 450px;" >
+            <div class="text">Caption Two </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/anh3.webp" style="width: 1000px; height: 450px;">
+            <div class="text">Caption Three </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/anh4.jpg" style="width: 1000px; height: 450px;"  >
+            <div class="text">Caption Four </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/anh5.jpg" style="width: 1000px; height: 450px;"  >
+            <div class="text">Caption Five </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/anh6.jpg" style="width: 1000px; height: 450px;"  >
+            <div class="text">Caption Six </div>
+          </div>
+          </div>
+          <br>
+          
+
+          <div style="text-align:center">
+
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+         </div>
+                  </div>
+            </div>
+            <div id="footer">
+  
+            </div>
+          </div>
+          <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    
+    </div>
+		</div>
+  
+      </head>
+      <body>
+      
+      <p id="demo"></p>
+      
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2023 16:37:25").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script>
+         
+	</div> 
+    <div id="table">
+        <table>
+            <tr class="image-book">
+                             
+                <td><img src="img/1.jpg" style="width: 300px; height: 250px;" ></td>
+                <td><img src="img/5.jpg" style="width: 300px; height: 250px;"></td>
+                <td><img src="img/6.jpg" style="width: 300px; height: 250px;"></td> 
+                <td><img src="img/dac-nhan-tam-thuviencuaban-ohay-tv-99493.png" style="width: 300px; height: 250px;"></td>
+                <td><img src="img/2.jpg" style="width: 300px; height: 250px;"> </td>
+
+            </tr>
+            <tr class="name-book">
+              <td><b>Tuổi Trẻ Đáng Giá Bao Nhiêu</b></td>
+              <td><b>Yêu Trên Từng Ngón Tay</b></td>
+              <td><b>Nếu Như Yêu</b></td>
+              <td><b>Đắc Nhân Tâm</b></td>
+              <td><b>Nơi Nào Đông Ấm</b></td>
+            </tr>
+            
+            <tr class="money">
+              <td><p>100.000đ</p></td>
+              <td><p>105.000đ</p></td>
+              <td><p>140.000đ</p></td>
+              <td><p>100.000đ</p></td>
+              <td><p>150.000đ</p></td>
+            </tr>
+            <tr class="button">
+              <td><button>Mua ngay</button></td>
+              <td><button>Mua ngay</button></td>
+              <td><button>Mua ngay</button></td>
+              <td><button>Mua ngay</button></td>
+              <td><button>Mua ngay</button></td>
+            </tr>
+        </table>
+    </div>
+  </div>
+  <div class="icon-b4">
+    <ul class="icon"><img src="img/fb.jfif" alt=""></ul>
+    <ul class="icon"><img src="img/tiktok.png" alt=""></ul>
+    <ul class="icon"><img src="img/youtube.png" alt=""></ul>
+    <ul class="icon"><img src="img/zalo.png" alt=""></ul>
+  </div>
+  <div class="thongbao">
+    Chào mừng bạn đã đến thế giới sách của Lê Thùy Hưng
+  </div>
+  <a href="https://vip88vn.com/">Tới trang tăng thu nhập</a>
+  <div id="demo" style="width:100%">
+      <marquee behavior="scroll" directions="left" class="list-danhsach">
+        <img src="img/sach1.png" width="155px" height="180px">
+        <img src="img/sach2.png" width="155px" height="180px">
+        <img src="img/sach3.png" width="155px" height="180px">
+        <img src="img/sach4.png" width="155px" height="180px">
+        <img src="img/sach5.png" width="155px" height="180px">
+        <img src="img/sach6.png" width="155px" height="180px">
+        <img src="img/sach7.png" width="155px" height="180px">
+        <img src="img/sach8.jpg" width="155px" height="180px">
+        <img src="img/sach9.jpg" width="155px" height="180px">
+        <img src="img/sach10.jpg" width="155px" height="180px">
+        <img src="img/sach11.png" width="155px" height="180px">
+      </marquee>
+ 
+    <div class="container_left">
+    <div class="card-box">
+    <img src="img/sach2.png" alt="Avatar" style="width:155px ; height: 180px">
+      <h4>Muôn Kiếp Nhân Sinh</h4> 
+      <p>Anh muốn được làm người canh giữ lũ trẻ trên cánh đồng lúa mạch. Anh biết, Phoebe ạ, đó là mơ tưởng điên khùng, ngu xuẩn nhưng thực sự anh muốn thế.</p> 
+     <a href="./chitiet6.html">Xem Thêm</a>
+    </div>
+    </div>
+    </div>
+    <div class="container_left">
+    <div class="card-box">
+    <img src="img/sach3.png" alt="Avatar" style="width:155px ; height: 180px">
+      <h4>Nổi Danh Vang Dội - Nữ hoàng Victoria Và Đế Chế Khổng Lồ</h4> 
+      <p>Cuộc đời phong phú và ly kỳ của Nữ hoàng Victoria - Nữ hoàng có thời gian trị vì lâu nhất của Vương quốc Anh - qua giọng kể của Alan MacDonald và ngòi bút minh họa của Clive Goddard, cuộc đời Nữ hoàng Victoria gắn liền với những sự kiện trọng đại của vương quốc Anh thế kỷ 19 trở nên vui nhộn, hài hước, lôi cuốn.</p> 
+     <a href="./chitiet5.html">Xem Thêm</a>
+    </div>
+    </div>
+    </div>
+    <div class="container_left">
+    <div class="card-box">
+    <img src="img/sach4.png" alt="Avatar" style="width:155px ; height: 180px">
+      <h4>Lối Sống Tối Giản Của Người Nhật</h4> 
+      <p>Lối sống tối giản là cách sống cắt giảm vật dụng xuống còn mức tối thiểu. Và cùng với cuộc sống ít đồ đạc, ta có thể để tâm nhiều hơn tới hạnh phúc, đó chính là chủ đề của cuốn sách này.</p> 
+     <a href="./chitiet4.html">Xem Thêm</a>
+    </div>
+    </div>
+    </div>
+    <div class="container_left">
+    <div class="card-box">
+    <img src="img/sach5.png" alt="Avatar" style="width:155px ; height: 180px">
+      <h4>Tôtem Sói</h4>
+      <p>Tiểu thuyết Tôtem sói hoàn toàn không theo một bố cục tiểu thuyết kinh điển. Đây như thể là câu chuyện cố tình làm ra vẻ “biết đâu kể đó” của một nhân vật như thể là nhân vật chính - một thanh niên trí thức Bắc Kinh tên là Trần Trận, cùng các thanh niên trí thức khác đi về đất Nội Mông “lao động thực tế</p> 
+     <a href="./chitiet3.html">Xem Thêm</a>
+    </div>
+    </div>
+    </div>
+    <div class="container_left">
+    <div class="card-box">
+    <img src="img/sach6.png" alt="Avatar" style="width:155px ; height: 180px">
+      <h4>Vô Cùng Tàn Nhẫn Vô Cùng Yêu Thương></h4> 
+      <p>Vô cùng tàn nhẫn vô cùng yêu thương là chấp bút của một bà mẹ Do Thái sinh ra và lớn lên ở Thượng Hải, đã bồi dưỡng con cái của mình trở thành triệu phú</p> 
+     <a href="./chitiet2.html">Xem Thêm</a>
+    </div>
+    </div>
+    </div>
+    <div class="container_left">
+    <div class="card-box">
+        <img src="img/sach7.png" alt="Avatar" style="width:155px ; height: 180px">
+          <h4>Gương Kiên Nhẫn - Những Bài Học Thành Công</h4> 
+          <p>Thông qua cuốn sách Gương kiên nhẫn - Những bài học thành công, Nguyễn Hiến Lê truyền cảm hứng mạnh mẽ về những con người có thật, không chấp nhận thực tại trớ trêu, sống siêng năng, kiên trì, nhiệt huyết để tìm ra những điều mới mẻ. Cuộc sống của họ gặp không ít khó khăn nhưng nhờ có tính kiên nhẫn mà họ đã vượt qua tất cả để đi đến thành công.</p> 
+          <a href="./chitiet.html">Xem Thêm</a>
+        </div>
+        </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+       
+      
+
+       <footer class="footer">
+
+          <section class="footer-module">
+              <div class="footer-information">
+              <div class="information-name information-befor">
+              <div class="name-logo">
+              <img src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png" 
+               alt="" class="information-img">
+               <h4> Học Lập Trình Để Đi Làm</h4>
+                  </div>
+                    <ul>
+                        <li> Điện thoại: 0354110976</li>
+                        <li> Email: lehoangthuyhung0710@gmail.com</li>
+                        <li> Địa chỉ: HUBT, **, **, **, **, Hà Nội</li>
+                    </ul>
+                  </div>
+                  <div class="information-name">
+                        <h4 style="margin: 6px 0 10px 0;">VỀ F8</h4>
+                          <ul>Giới thiệu</ul>
+                          <ul>Cơ hội việc làm</ul>
+                          </div>
+                           </div>
+                           <div class="footer-information">
+                               <div class="footer-ket">
+                                   © 2018 - 2022 F8. Nền tảng học lập trình hàng đầu Việt Nam
+                               </div>
+                               <div class="footer-ket">
+                                   <i class="fa-brands fa-facebook-f"></i>
+                                   <i class="fa-brands fa-instagram"></i>
+                                   <i class="fa-brands fa-youtube"></i>
+                               </div>
+                           </div>
+                       </section>
+                   </footer>
+       
+       
+        
+</body>
+</html>
+
+            

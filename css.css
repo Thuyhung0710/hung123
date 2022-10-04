@@ -1,0 +1,20 @@
+.header_img {
+    display: flex;
+}
+
+.content_btn span {
+    color: red;
+    margin: 10px 0;
+}
+
+.content_btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_btn button {
+    width: 50%;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 12px;
+}
