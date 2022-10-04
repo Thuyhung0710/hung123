@@ -33,6 +33,7 @@ nav{
 }
 #main-menu li:hover ul.sub-menu{
   display: block;
+  
   background:rgb(0, 0, 0);
 }
 #main-menu li a{
