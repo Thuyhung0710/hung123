@@ -1,0 +1,422 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url(img/video-background-dep_110344690.jpg);
+  background-size: cover;
+}
+#container{
+  max-width: 100%;
+  margin:0px auto;
+}
+#header{
+  background-color: black;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+#logo img{
+  max-width: 100px;
+  height: none;
+}
+#main-menu{
+  display: flex;
+  list-style: none;
+  padding-left: 560px;
+  font-size: 18px;
+}
+#main-menu li{
+  position: relative;
+}
+#main-menu li:hover ul.sub-menu{
+  display: block;
+  background:rgb(0, 0, 0);
+}
+#main-menu li a{
+  color: #f8f7f7;
+  display: block;
+  padding: 18px 35px;
+  text-decoration: none;
+}
+#main-menu ul.sub-menu{
+  position: absolute;
+  background: #333;
+  padding: 15px 0px;
+  list-style: none;
+  width: 200px;
+  display: none;
+}
+#main-menu ul.sub-menu a{
+  padding: 8 15px;
+  left: 0;
+}
+#main-menu li a:hover{
+  background: rgb(179, 41, 41);
+}
+#main-menu li:hover a ::before{
+  width: 100%;
+}
+/*-main*/
+.timkiem{
+  font-style: italic;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#table{
+  margin: 10px;
+  padding: 5px;
+  
+  
+}
+.image-book{
+  justify-items: center;
+  align-self:center;
+}
+.image-book img{
+  padding: 40px;
+}
+.name-book{
+  text-align: center;
+}
+.name-book b{
+  font-size: 18px;
+  color: black;
+}
+.money{
+  text-align: center;
+}
+.money p{
+  font-size: 16px ;
+  color:crimson;
+}
+.button{
+  text-align: center;
+  
+}
+.button td button{
+  padding: 10px 30px;
+  
+
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin:0 auto;
+padding-top: 30px;
+padding-left: 5px;
+}
+.mySlides img{
+  width: 100%;
+  height: 650px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  color: beige;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
+.icon-b4 {
+  position: fixed;
+  top: 100px;
+  left: -20px;
+}
+
+
+.icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.icon {
+  margin: 10px 0;
+  height: 50px;
+  width: 50px;
+}
+
+.icon:hover {
+  transform: translateX(20px);
+}
+
+.thongbao {
+  position: fixed;
+  top: 75px;
+  right: -50px;
+  background-color:#f44336;
+  padding: 5px;
+  border-radius: 20px;
+  animation: chay 7s linear infinite;
+}
+
+@keyframes chay {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-1570px);
+  }
+}
+.card{
+  float:left;
+  font-size: 25px;
+}
+.card-box p{
+  font-size: 10px;
+}
+.container_left{
+  width:15%;
+  float:right;
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.card-box a {
+  text-decoration: none;
+  color:#2196F3;
+}
+.card-box h4 {
+  color:brown;
+}
+
+.footer {
+  border-top: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 480px;
+}
+
+.footer-module {
+  color: blanchedalmond;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.footer-information {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.information-name {
+  position: relative;
+  margin-top: 60px;
+  margin-right: 22px;
+  font-size: 26px;
+}
+
+.information-name ul {
+  list-style:inside;
+  font-size: 20px;
+}
+
+.name-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.information-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.information-befor::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  right: -10px;
+  width: 2px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
